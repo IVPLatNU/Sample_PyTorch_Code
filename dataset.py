@@ -13,6 +13,16 @@ listed in increasing level of freedom for the programmer:
 For a list of readily available image datasets available from PyTorch, please visit
 https://pytorch.org/docs/stable/torchvision/datasets.html
 
+In PyTorch, for images, they are of shape (C, H, W) where:
+
+	- C: Number of channels
+	- H: Number of rows (height)
+	- W: Number of columns (width)
+
+When we pass a batch of images through the neural network, they are of shape (B, C, H, W)
+where B is the batch size. When we define our datasets though, we do not worry about the
+batch size. It is the job of the data loader to resize the images for the batches.
+
 IMPORTANT: THE EXAMPLES BELOW ARE NONSENSE FOR OUR NEURAL NETWORK TO CLASSIFY IMAGES.
 	WE WILL BE TRYING TO CLASSIFY *RANDOM* DATA AS DIGITS FROM 0-9. HOWEVER, WE WILL
 	TEST USING THE MNIST TESTING DATASET. YOU SHOULD BE ABLE TO MODIFY THIS CODE TO
@@ -191,6 +201,11 @@ Here, we'll pretend that we cannot store all the data from `My_Train_Images` wit
 our class. Instead, we store a list of file locations that will be read when needed.
 Note that this is much slower than reading in all the data or using ImageFolder, but
 it gets the job done.
+
+If you are not working with image data, then instead inherit the torch.utils.data.Dataset
+class, and remove the `super init` line. `**kwargs` is also not needed. Additionally, you
+will not have access to the transforms, so you would need to remove the four lines in
+`__getitem__` below that include `self.transform` and `self.target_transform`
 '''
 class Dataset_Custom(torchvision.datasets.VisionDataset):
 	def __init__(self, **kwargs):
