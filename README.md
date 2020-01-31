@@ -55,4 +55,4 @@ This file defines the dataset and data loaders. As was mentioned earlier, three 
 
 ---
 
-Please direct any comments/questions about this example code to <ivpl@u.northwestern.edu>
+Please direct any comments/questions about this example code to <ivpl@u.northwestern.edu> or raise an issue in this repo.
