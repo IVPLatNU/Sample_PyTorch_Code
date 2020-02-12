@@ -19,7 +19,7 @@ The testing dataset is the MNIST `torchvision` dataset. Within the example code,
 
 ## Solution
 
-![The example neural network](https://github.com/IVPLatNU/Sample_PyTorch_Code/tree/master/misc/network.png "The example neural network")
+![The example neural network](https://github.com/IVPLatNU/Sample_PyTorch_Code/blob/master/misc/network.png "The example neural network")
 
 We will train a convolutional neural network. It consists of the following layers:
 
