@@ -30,7 +30,11 @@ The output will be a one-hot encoded vector, i.e. a 1-dimensional vector of size
 
 Our loss function will simply be the mean squared error.
 
+---
+
 <img src="https://github.com/IVPLatNU/Sample_PyTorch_Code/blob/master/misc/network.png" width="60%" align="middle">
+
+---
 
 ## The Code
 The main function is within `run_model.py`. To do a basic run, just type in the command line: 
