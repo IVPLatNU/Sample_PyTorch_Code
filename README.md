@@ -19,8 +19,6 @@ The testing dataset is the MNIST `torchvision` dataset. Within the example code,
 
 ## Solution
 
-![The example neural network](https://github.com/IVPLatNU/Sample_PyTorch_Code/blob/master/misc/network.png "The example neural network")
-
 We will train a convolutional neural network. It consists of the following layers:
 
 - 2D Convolutions
@@ -31,6 +29,8 @@ We will train a convolutional neural network. It consists of the following layer
 The output will be a one-hot encoded vector, i.e. a 1-dimensional vector of size 10 where the elements are all zero except at the index corresponding to the correct class, which will be one.
 
 Our loss function will simply be the mean squared error.
+
+<img src="https://github.com/IVPLatNU/Sample_PyTorch_Code/blob/master/misc/network.png" width="60%">
 
 ## The Code
 The main function is within `run_model.py`. To do a basic run, just type in the command line: 
