@@ -1,6 +1,12 @@
 # PyTorch Tutorial
 This is sample code for how to use [PyTorch](https://pytorch.org) for your projects.
 
+## Installation Requirements
+You will need to install PyTorch and Pillow to run the code.
+```
+pip install torch torchvision Pillow
+```
+
 ## Problem
 In this example, we want to try to classify [MNIST](http://yann.lecun.com/exdb/mnist/) data. However, we have cleverly made some important changes to prevent you from downloading this code and submitting it as your project without some major changes. Don't worry, you'll still learn how to use PyTorch through this odd example.
 
