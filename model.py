@@ -149,7 +149,7 @@ class Inner_Linear_Block(nn.Module):
 		self.lin = nn.Linear(in_features = in_features,
 		                     out_features = out_features)
 
-		#self.batch_norm = nn.BatchNorm1d(num_features = out_features)
+		self.batch_norm = nn.BatchNorm1d(num_features = out_features)
 
 		self.relu = nn.ReLU()
 
