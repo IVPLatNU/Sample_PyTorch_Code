@@ -2,6 +2,9 @@
 
 This file defines the neural network and the loss function.
 
+For popular networks, visit https://pytorch.org/docs/stable/torchvision/models.html
+for a tutorial on how to use them. It's not covered here
+
 - All neural networks must inherit the nn.Module class
 - All networks must have two defined functions:
 	`__init__` initializes the class
@@ -137,7 +140,7 @@ class Inner_Conv_Block(nn.Module):
 
 
 '''
-Inner_Conv_Block contains three layers:
+Inner_Linear_Block contains three layers:
 	1)	Fully Connected
 	2)	Batch Normalization
 	3)	ReLU Activation
